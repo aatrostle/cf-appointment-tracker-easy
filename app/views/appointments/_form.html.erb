@@ -15,6 +15,14 @@
     <%= f.label :appointment_date %><br />
     <%= f.datetime_select :appointment_date %>
   </div>
+  <div class="field">
+    <%= f.label :instructor %><br />
+    <%= f.collection_select :instructor_id, Instructor.all, :id, :name %>
+  </div>
+  <div class="field">
+    <%= f.label :applicant %><br />
+    <%= f.collection_select :applicant_id, Applicant.all, :id, :name %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
