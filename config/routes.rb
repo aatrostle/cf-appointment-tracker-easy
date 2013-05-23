@@ -1,4 +1,13 @@
 AppointmentTrackerEasy::Application.routes.draw do
+  resources :appointments
+
+
+  resources :applicants
+
+
+  resources :instructors
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
